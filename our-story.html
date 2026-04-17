@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story — Sproozt Waterless Car Wash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+      <ul class="nav-links">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="our-story.html" class="active">Our Story</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="shop.html" class="nav-buy">Shop Now</a></li>
+      </ul>
+      <div class="burger" id="burger" onclick="openMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="mob-menu">
+  <button class="mob-close" onclick="closeMenu()">✕</button>
+  <a href="product.html"      onclick="closeMenu()">Product</a>
+  <a href="benefits.html"     onclick="closeMenu()">Benefits</a>
+  <a href="how-it-works.html" onclick="closeMenu()">How It Works</a>
+  <a href="our-story.html"    onclick="closeMenu()" class="active">Our Story</a>
+  <a href="reviews.html"      onclick="closeMenu()">Reviews</a>
+  <a href="shop.html"         onclick="closeMenu()">Shop Now</a>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header" data-watermark="STORY">
+  <div class="container">
+    <div class="page-header-inner reveal">
+      <div class="eyebrow">Our Story</div>
+      <h1>Born in Sweden.<br>Built for the <em style="color:var(--gold);font-style:italic;">World.</em></h1>
+      <p>A brand founded on one conviction: there is always a smarter, cleaner, more responsible way to do things. Sproozt is proof of that.</p>
+    </div>
+  </div>
+</div>
+
+<!-- BRAND STORY -->
+<section id="story">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-copy reveal">
+        <div class="eyebrow">The Beginning</div>
+        <h2>A Choice to Do<br>Things <em style="color:var(--gold);font-style:italic;">Better.</em></h2>
+        <p>Sproozt was founded on a simple conviction: there had to be a better way. Not just to wash a car — but to rethink the entire relationship between modern life and unnecessary waste.</p>
+        <p>Sweden has always led the world in environmental thinking and design excellence. We built Sproozt on those same principles — crafting a product that is as intelligent as it is effective. One that respects your time, your money, and your environment in equal measure.</p>
+        <p>Every bottle of Sproozt represents a choice. A choice to consume smarter, live cleaner, and hold your standards higher — without sacrificing a single drop of quality.</p>
+        <div class="values">
+          <div class="val"><div class="val-dot"></div><p>Quality without compromise</p></div>
+          <div class="val"><div class="val-dot"></div><p>Simplicity as a virtue</p></div>
+          <div class="val"><div class="val-dot"></div><p>Sustainability by design</p></div>
+          <div class="val"><div class="val-dot"></div><p>Performance that speaks</p></div>
+        </div>
+      </div>
+      <div class="story-stats reveal delay-2">
+        <div class="ss-card">
+          <h3>150 L</h3>
+          <p>Water saved every time Sproozt replaces a traditional car wash</p>
+        </div>
+        <div class="ss-card">
+          <h3>0</h3>
+          <p>Phosphates, bleach, petroleum, acids, abrasives, or solvents in our formula</p>
+        </div>
+        <div class="ss-card">
+          <h3>ISO</h3>
+          <p>9001 &amp; 14001 certified — quality and environmental management you can trust</p>
+        </div>
+        <div class="ss-card">
+          <h3>🇸🇪</h3>
+          <p>Swedish-founded. Scandinavian values. Global ambitions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCANDINAVIAN VALUES -->
+<section style="padding: 100px 0; background: var(--bg-off);">
+  <div class="container">
+    <div class="section-intro reveal">
+      <div class="eyebrow">Our Values</div>
+      <h2>Scandinavian Values<br>at Our Core</h2>
+      <p>Everything about Sproozt reflects the values that have defined Swedish design and innovation for generations.</p>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(2,1fr); gap: 2px;">
+      <div class="b-card reveal">
+        <span class="b-icon">🏔️</span>
+        <h3>Lagom — Just Right</h3>
+        <p>The Swedish concept of "lagom" — not too much, not too little — is built into every aspect of Sproozt. The right amount of formula. The right result. No excess, no waste.</p>
+      </div>
+      <div class="b-card reveal delay-1">
+        <span class="b-icon">🌲</span>
+        <h3>Nature First</h3>
+        <p>Swedes have a deep, innate connection with the natural world. Sproozt was built to honour that relationship — no harmful runoff, no chemical waste, no environmental compromise.</p>
+      </div>
+      <div class="b-card reveal delay-2">
+        <span class="b-icon">🔬</span>
+        <h3>Innovation Without Pretension</h3>
+        <p>Sweden has produced some of the world's most important innovations — quietly, without fanfare. Sproozt is built in that spirit: genuinely better technology, presented with understated confidence.</p>
+      </div>
+      <div class="b-card reveal delay-3">
+        <span class="b-icon">♻️</span>
+        <h3>Responsibility as Standard</h3>
+        <p>For us, sustainability is not a marketing term. It is a design requirement. Every decision — from the formula to the packaging — is made with environmental responsibility as the baseline.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MINI CTA -->
+<section class="cta-block alt">
+  <div class="container">
+    <div class="reveal" style="max-width:540px; margin:0 auto;">
+      <div class="eyebrow" style="justify-content:center;">Join the Movement</div>
+      <h2>Be Part of the<br><em style="color:var(--sage);font-style:italic;">Smarter Choice.</em></h2>
+      <p>Drivers across Europe are making the switch. One bottle at a time, we're changing how cars get clean.</p>
+      <div class="cta-btns">
+        <a href="shop.html" class="btn btn-gold">Shop Now — 450 SEK</a>
+        <a href="reviews.html" class="btn btn-outline">Read Reviews</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+        <p>Premium waterless car care, founded in Sweden. Engineered for those who demand excellence without compromise.</p>
+      </div>
+      <div class="f-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product.html">About Sproozt</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="shop.html">Shop Now</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="reviews.html">Reviews &amp; FAQ</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Sproozt AB · Founded in Sweden · All rights reserved.</p>
+      <div class="socials">
+        <a href="#" class="soc" aria-label="Instagram">IG</a>
+        <a href="#" class="soc" aria-label="TikTok">TK</a>
+        <a href="#" class="soc" aria-label="Facebook">FB</a>
+        <a href="#" class="soc" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

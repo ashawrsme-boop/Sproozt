@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "ai-image-generation": {
+      "source": "skillssh/skills",
+      "sourceType": "github",
+      "computedHash": "37d8c07aff78080f9f610623f8df6d858528a583525c8ad28f3cf0c42927f884"
+    }
+  }
+}

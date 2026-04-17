@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Product — Sproozt Waterless Car Wash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+      <ul class="nav-links">
+        <li><a href="product.html" class="active">Product</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="shop.html" class="nav-buy">Shop Now</a></li>
+      </ul>
+      <div class="burger" id="burger" onclick="openMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="mob-menu">
+  <button class="mob-close" onclick="closeMenu()">✕</button>
+  <a href="product.html"      onclick="closeMenu()" class="active">Product</a>
+  <a href="benefits.html"     onclick="closeMenu()">Benefits</a>
+  <a href="how-it-works.html" onclick="closeMenu()">How It Works</a>
+  <a href="our-story.html"    onclick="closeMenu()">Our Story</a>
+  <a href="reviews.html"      onclick="closeMenu()">Reviews</a>
+  <a href="shop.html"         onclick="closeMenu()">Shop Now</a>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header" data-watermark="FORMULA">
+  <div class="container">
+    <div class="page-header-inner reveal">
+      <div class="eyebrow">The Product</div>
+      <h1>A Formula Engineered<br>for <em style="color:var(--gold);font-style:italic;">Perfection.</em></h1>
+      <p>Professional-grade, ISO-certified, and completely waterless. Sproozt cleans, polishes, and protects your car in one effortless step.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="reveal">
+        <div class="about-card">
+          <span class="about-card-icon">⚗️</span>
+          <h3>The Formula Behind the Finish</h3>
+          <p>Sproozt uses a professional-grade, water-based formula enriched with high-grade polymers, wetting agents, and advanced lubricants. It lifts dirt and contaminants from the surface without scratching — and leaves behind a protective polymer layer that actively repels future dust and grime.</p>
+          <div class="about-card-bg"></div>
+        </div>
+      </div>
+
+      <div class="about-copy reveal delay-2">
+        <div class="eyebrow">What Makes It Different</div>
+        <h2>Not Just Clean.<br>Remarkably <em style="color:var(--gold);font-style:italic;">Clean.</em></h2>
+        <p>Traditional car washing consumes up to 150 litres of water per session. Sproozt eliminates that entirely. Our formula breaks down dirt at a molecular level — encapsulating particles so they can be gently wiped away, leaving a flawless, mirror-like finish.</p>
+        <p>Developed using technology trusted by professional detailers and certified to ISO standards, Sproozt brings dealership-quality results to your driveway, garage, or parking space — anywhere, anytime.</p>
+        <div class="eyebrow" style="margin-top:32px;">What's Inside</div>
+        <div class="ing-grid">
+          <div class="ing-tag">High-Grade Polymers</div>
+          <div class="ing-tag">Wetting Agents</div>
+          <div class="ing-tag">Advanced Lubricants</div>
+          <div class="ing-tag">Water-Based Carrier</div>
+          <div class="ing-tag">No Phosphates</div>
+          <div class="ing-tag">No Abrasives</div>
+          <div class="ing-tag">No Bleach</div>
+          <div class="ing-tag">No Petroleum</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section style="padding: 80px 0 130px; background: var(--charcoal);">
+  <div class="container">
+    <div class="section-intro reveal">
+      <div class="eyebrow">Certifications</div>
+      <h2>Trusted by Standards.<br>Trusted by Drivers.</h2>
+      <p>Sproozt's formula is manufactured to internationally recognised quality and environmental standards — so you know exactly what you're using.</p>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(3,1fr); gap: 2px;">
+      <div class="b-card reveal">
+        <span class="b-icon">🏅</span>
+        <h3>ISO 9001</h3>
+        <p>Quality Management System certification — guaranteeing consistent, high-quality manufacturing processes at every batch.</p>
+      </div>
+      <div class="b-card reveal delay-2">
+        <span class="b-icon">🌱</span>
+        <h3>ISO 14001</h3>
+        <p>Environmental Management System certification — our production meets rigorous international standards for environmental responsibility.</p>
+      </div>
+      <div class="b-card reveal delay-4">
+        <span class="b-icon">🛡️</span>
+        <h3>EU Directive Compliant</h3>
+        <p>Fully compliant with EU chemical regulations. Non-hazardous, safe for use by consumers and professionals alike.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MINI CTA -->
+<section class="cta-block alt">
+  <div class="container">
+    <div class="reveal" style="max-width:540px; margin:0 auto;">
+      <div class="eyebrow" style="justify-content:center;">Ready to Try It?</div>
+      <h2>One Bottle. One Cloth.<br><em style="color:var(--sage);font-style:italic;">One Perfect Finish.</em></h2>
+      <p>Experience the formula for yourself. 350ml · 450 SEK · Ships across Europe.</p>
+      <div class="cta-btns">
+        <a href="shop.html" class="btn btn-gold">Order Now — 450 SEK</a>
+        <a href="how-it-works.html" class="btn btn-outline">How It Works</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+        <p>Premium waterless car care, founded in Sweden. Engineered for those who demand excellence without compromise.</p>
+      </div>
+      <div class="f-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product.html">About Sproozt</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="shop.html">Shop Now</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="reviews.html">Reviews &amp; FAQ</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Sproozt AB · Founded in Sweden · All rights reserved.</p>
+      <div class="socials">
+        <a href="#" class="soc" aria-label="Instagram">IG</a>
+        <a href="#" class="soc" aria-label="TikTok">TK</a>
+        <a href="#" class="soc" aria-label="Facebook">FB</a>
+        <a href="#" class="soc" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

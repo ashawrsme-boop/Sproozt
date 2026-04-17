@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews — Sproozt Waterless Car Wash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+      <ul class="nav-links">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="reviews.html" class="active">Reviews</a></li>
+        <li><a href="shop.html" class="nav-buy">Shop Now</a></li>
+      </ul>
+      <div class="burger" id="burger" onclick="openMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="mob-menu">
+  <button class="mob-close" onclick="closeMenu()">✕</button>
+  <a href="product.html"      onclick="closeMenu()">Product</a>
+  <a href="benefits.html"     onclick="closeMenu()">Benefits</a>
+  <a href="how-it-works.html" onclick="closeMenu()">How It Works</a>
+  <a href="our-story.html"    onclick="closeMenu()">Our Story</a>
+  <a href="reviews.html"      onclick="closeMenu()" class="active">Reviews</a>
+  <a href="shop.html"         onclick="closeMenu()">Shop Now</a>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header" data-watermark="REVIEWS">
+  <div class="container">
+    <div class="page-header-inner reveal">
+      <div class="eyebrow">Testimonials</div>
+      <h1>Trusted by Drivers<br>Across <em style="color:var(--gold);font-style:italic;">Europe.</em></h1>
+      <p>Real customers. Real results. See what drivers from Sweden and beyond are saying about Sproozt.</p>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="reviews-grid">
+      <div class="r-card reveal">
+        <div class="r-quote">"</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"I was sceptical at first — washing a car without water felt impossible. But my car came out cleaner than it does at the local car wash. One spray, one cloth. Genuinely remarkable."</p>
+        <div class="r-author">
+          <div class="r-avatar">EL</div>
+          <div><p class="r-name">Erik Lindström</p><p class="r-location">Stockholm · Verified Buyer</p></div>
+        </div>
+      </div>
+      <div class="r-card reveal delay-1">
+        <div class="r-quote">"</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"I care deeply about my environmental footprint. Sproozt is exactly what I've been looking for — zero water waste, no harsh chemicals, and the result is genuinely better than a bucket wash."</p>
+        <div class="r-author">
+          <div class="r-avatar">AH</div>
+          <div><p class="r-name">Anna Holmgren</p><p class="r-location">Gothenburg · Verified Buyer</p></div>
+        </div>
+      </div>
+      <div class="r-card reveal delay-2">
+        <div class="r-quote">"</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"I live in an apartment with no outdoor water access. Sproozt solved that completely. I do it in the parking garage now — takes five minutes and looks fantastic every single time."</p>
+        <div class="r-author">
+          <div class="r-avatar">MK</div>
+          <div><p class="r-name">Marcus Karlsson</p><p class="r-location">Malmö · Verified Buyer</p></div>
+        </div>
+      </div>
+      <div class="r-card reveal delay-1">
+        <div class="r-quote">"</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"I keep a bottle in my car. Bird droppings, road dust, fingerprints — gone in seconds. The finish is polished, the formula feels gentle on my paint, and I've already recommended it to everyone I know."</p>
+        <div class="r-author">
+          <div class="r-avatar">SB</div>
+          <div><p class="r-name">Sophie Bergström</p><p class="r-location">Uppsala · Verified Buyer</p></div>
+        </div>
+      </div>
+      <div class="r-card reveal delay-2">
+        <div class="r-quote">"</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"I was spending 300–400 SEK a month at automatic car washes. With Sproozt, one bottle covers weeks of regular cleaning. The eco angle matters to me, but the quality alone would have sold me."</p>
+        <div class="r-author">
+          <div class="r-avatar">JN</div>
+          <div><p class="r-name">Jonas Nilsson</p><p class="r-location">Örebro · Verified Buyer</p></div>
+        </div>
+      </div>
+      <div class="r-card reveal delay-3">
+        <div class="r-quote">"</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Clean car, clean conscience. The bottle design is elegant, the formula smells fresh and neutral, and the result is a streak-free shine every time. It's a permanent part of my routine now."</p>
+        <div class="r-author">
+          <div class="r-avatar">LW</div>
+          <div><p class="r-name">Lena Westberg</p><p class="r-location">Helsingborg · Verified Buyer</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-intro reveal">
+      <div class="eyebrow">FAQ</div>
+      <h2>Frequently Asked<br>Questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h3>How does a waterless car wash actually work?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">
+          <p>Sproozt uses a professional-grade blend of high-grade polymers, wetting agents, and lubricants. When sprayed onto your car's surface, these agents encapsulate dirt and dust particles — lifting them off the paint and suspending them safely in the solution. You then wipe them away with a microfibre cloth. The lubricants prevent any friction between the contaminants and your paint, leaving behind a clean, protected, polished surface.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h3>Will it scratch my paintwork?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">
+          <p>No. The formula contains advanced lubricants specifically formulated to prevent surface contact between contaminants and your paint during wiping. We always recommend using a clean, high-quality microfibre cloth and working in small sections for maximum safety.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h3>What surfaces can I use Sproozt on?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">
+          <p>Sproozt is safe on all standard automotive exterior surfaces — painted bodywork, glass, chrome trim, alloy wheels, plastic bumpers and trims, and rubber seals. The formula is completely free from abrasives, acids, solvents, and bleach.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h3>How environmentally friendly is the formula?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">
+          <p>Sproozt eliminates water consumption entirely — saving up to 150 litres per wash. The formula contains no phosphates, no petroleum, no bleach, no acids, and no environmentally harmful solvents. Our manufacturing is ISO 14001 accredited.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h3>How many washes does one 350ml bottle provide?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">
+          <p>A full vehicle wash typically uses 100–160ml depending on vehicle size and level of soiling. A 350ml bottle therefore gives approximately 2–3 full vehicle cleans. For spot maintenance between full washes, a bottle will last considerably longer.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h3>Where does Sproozt ship to?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">
+          <p>We currently ship to Sweden and across Europe, excluding sanctioned countries. Shipping costs and estimated delivery times will be shown at checkout based on your location.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h3>Which payment methods do you accept?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">
+          <p>We accept Swish (for Swedish customers), PayPal, and all major credit and debit cards processed securely through Shopify Payments. All transactions are fully encrypted and secure.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <h3>What is your returns policy?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">
+          <p>We stand behind Sproozt completely. If you are not satisfied for any reason, contact us within 30 days of delivery and we will arrange a full refund or replacement — no hassle, no questions asked.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MINI CTA -->
+<section class="cta-block">
+  <div class="container">
+    <div class="reveal" style="max-width:540px; margin:0 auto;">
+      <div class="eyebrow" style="justify-content:center;">Ready to Join Them?</div>
+      <h2>See It for<br><em style="color:var(--sage);font-style:italic;">Yourself.</em></h2>
+      <p>Join thousands of drivers who have made the switch. 350ml · 450 SEK · Ships across Europe.</p>
+      <div class="cta-btns">
+        <a href="shop.html" class="btn btn-gold">Shop Now — 450 SEK</a>
+        <a href="product.html" class="btn btn-outline">About the Product</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+        <p>Premium waterless car care, founded in Sweden. Engineered for those who demand excellence without compromise.</p>
+      </div>
+      <div class="f-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product.html">About Sproozt</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="shop.html">Shop Now</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="reviews.html">Reviews &amp; FAQ</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Sproozt AB · Founded in Sweden · All rights reserved.</p>
+      <div class="socials">
+        <a href="#" class="soc" aria-label="Instagram">IG</a>
+        <a href="#" class="soc" aria-label="TikTok">TK</a>
+        <a href="#" class="soc" aria-label="Facebook">FB</a>
+        <a href="#" class="soc" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

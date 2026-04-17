@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works — Sproozt Waterless Car Wash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+      <ul class="nav-links">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="how-it-works.html" class="active">How It Works</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="shop.html" class="nav-buy">Shop Now</a></li>
+      </ul>
+      <div class="burger" id="burger" onclick="openMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="mob-menu">
+  <button class="mob-close" onclick="closeMenu()">✕</button>
+  <a href="product.html"      onclick="closeMenu()">Product</a>
+  <a href="benefits.html"     onclick="closeMenu()">Benefits</a>
+  <a href="how-it-works.html" onclick="closeMenu()" class="active">How It Works</a>
+  <a href="our-story.html"    onclick="closeMenu()">Our Story</a>
+  <a href="reviews.html"      onclick="closeMenu()">Reviews</a>
+  <a href="shop.html"         onclick="closeMenu()">Shop Now</a>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header" data-watermark="PROCESS">
+  <div class="container">
+    <div class="page-header-inner reveal">
+      <div class="eyebrow">The Process</div>
+      <h1>Three Steps to a<br><em style="color:var(--gold);font-style:italic;">Perfect Finish.</em></h1>
+      <p>No equipment to set up. No water source needed. No specialist knowledge required. Just three effortless steps to a result you'd expect from a professional detailer.</p>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="container">
+    <div class="steps-wrap">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <h3>Spray</h3>
+        <p>Apply Sproozt directly to a section of your car's exterior. The formula instantly begins lifting and encapsulating dirt, dust, and contaminants at a molecular level — safely suspending them away from the paintwork.</p>
+      </div>
+      <div class="step reveal delay-2">
+        <div class="step-num">02</div>
+        <h3>Wipe</h3>
+        <p>Using a clean microfibre cloth, glide across the surface in smooth, even strokes. The lubricating formula ensures zero scratching — even on sensitive, freshly painted surfaces. Work in small sections for the best result.</p>
+      </div>
+      <div class="step reveal delay-4">
+        <div class="step-num">03</div>
+        <h3>Reveal</h3>
+        <p>Buff to a deep, mirror-like shine. Your vehicle is clean, polished, and polymer-protected — with no water, no bucket, and no mess left behind. Repeat across the full vehicle in minutes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPS -->
+<section style="padding: 80px 0; background: var(--charcoal);">
+  <div class="container">
+    <div class="section-intro reveal">
+      <div class="eyebrow">Pro Tips</div>
+      <h2>Get the Most<br>From Every Spray</h2>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(3,1fr); gap: 2px;">
+      <div class="b-card reveal">
+        <span class="b-icon">🧴</span>
+        <h3>Work in Sections</h3>
+        <p>Divide your car into panels and treat one at a time. This prevents the formula from drying before you wipe, ensuring a streak-free result every time.</p>
+      </div>
+      <div class="b-card reveal delay-2">
+        <span class="b-icon">🧽</span>
+        <h3>Use a Clean Cloth</h3>
+        <p>Always use a fresh, clean microfibre cloth. A dirty cloth can redistribute contaminants. Fold your cloth regularly to always have a clean face to wipe with.</p>
+      </div>
+      <div class="b-card reveal delay-4">
+        <span class="b-icon">🌤️</span>
+        <h3>Avoid Direct Sunlight</h3>
+        <p>For optimal results, apply in shade or during cooler parts of the day. This gives the formula more time to work before it evaporates, for a deeper clean.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section id="compare">
+  <div class="container">
+    <div class="section-intro reveal">
+      <div class="eyebrow">The Comparison</div>
+      <h2>Sproozt vs.<br>Everything Else</h2>
+      <p>Traditional methods are wasteful, time-consuming, and harsh on your car. Sproozt redefines what a car wash can be.</p>
+    </div>
+    <div class="compare-wrap reveal">
+      <div class="cmp-head">
+        <div>Feature</div>
+        <div class="col-sproozt">✦ Sproozt</div>
+        <div class="col-trad">Traditional Wash</div>
+      </div>
+      <div class="cmp-row">
+        <div>Water consumption per wash</div>
+        <div class="col-sproozt">0 litres</div>
+        <div class="col-trad"><span class="cross">✕</span>100–150 litres</div>
+      </div>
+      <div class="cmp-row">
+        <div>Time to complete</div>
+        <div class="col-sproozt">Under 5 minutes</div>
+        <div class="col-trad"><span class="cross">✕</span>30–60 minutes</div>
+      </div>
+      <div class="cmp-row">
+        <div>Risk of paint scratching</div>
+        <div class="col-sproozt">Minimal (lubricated)</div>
+        <div class="col-trad"><span class="cross">✕</span>High (brushes &amp; sponges)</div>
+      </div>
+      <div class="cmp-row">
+        <div>Use anywhere (no water access needed)</div>
+        <div class="col-sproozt"><span class="tick">✓</span>Yes</div>
+        <div class="col-trad"><span class="cross">✕</span>Requires hose / tap</div>
+      </div>
+      <div class="cmp-row">
+        <div>Eco-certified formula</div>
+        <div class="col-sproozt"><span class="tick">✓</span>ISO 14001</div>
+        <div class="col-trad"><span class="cross">✕</span>Often contains harsh chemicals</div>
+      </div>
+      <div class="cmp-row">
+        <div>Leaves protective coating</div>
+        <div class="col-sproozt"><span class="tick">✓</span>Polymer protection</div>
+        <div class="col-trad"><span class="cross">✕</span>No residual protection</div>
+      </div>
+      <div class="cmp-row">
+        <div>Works in all weather &amp; locations</div>
+        <div class="col-sproozt"><span class="tick">✓</span>Year-round, anywhere</div>
+        <div class="col-trad"><span class="cross">✕</span>Freezes, runs, evaporates</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MINI CTA -->
+<section class="cta-block alt">
+  <div class="container">
+    <div class="reveal" style="max-width:540px; margin:0 auto;">
+      <div class="eyebrow" style="justify-content:center;">Try It Now</div>
+      <h2>Spray. Wipe.<br><em style="color:var(--sage);font-style:italic;">Shine.</em></h2>
+      <p>The simplest car clean you'll ever do. 350ml · 450 SEK · Delivered to your door.</p>
+      <div class="cta-btns">
+        <a href="shop.html" class="btn btn-gold">Shop Now — 450 SEK</a>
+        <a href="benefits.html" class="btn btn-outline">See the Benefits</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+        <p>Premium waterless car care, founded in Sweden. Engineered for those who demand excellence without compromise.</p>
+      </div>
+      <div class="f-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product.html">About Sproozt</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="shop.html">Shop Now</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="reviews.html">Reviews &amp; FAQ</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Sproozt AB · Founded in Sweden · All rights reserved.</p>
+      <div class="socials">
+        <a href="#" class="soc" aria-label="Instagram">IG</a>
+        <a href="#" class="soc" aria-label="TikTok">TK</a>
+        <a href="#" class="soc" aria-label="Facebook">FB</a>
+        <a href="#" class="soc" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

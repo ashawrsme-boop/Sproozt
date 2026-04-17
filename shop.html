@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — Sproozt Waterless Car Wash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+      <ul class="nav-links">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="shop.html" class="nav-buy active">Shop Now</a></li>
+      </ul>
+      <div class="burger" id="burger" onclick="openMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="mob-menu">
+  <button class="mob-close" onclick="closeMenu()">✕</button>
+  <a href="product.html"      onclick="closeMenu()">Product</a>
+  <a href="benefits.html"     onclick="closeMenu()">Benefits</a>
+  <a href="how-it-works.html" onclick="closeMenu()">How It Works</a>
+  <a href="our-story.html"    onclick="closeMenu()">Our Story</a>
+  <a href="reviews.html"      onclick="closeMenu()">Reviews</a>
+  <a href="shop.html"         onclick="closeMenu()" class="active">Shop Now</a>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header" data-watermark="SHOP">
+  <div class="container">
+    <div class="page-header-inner reveal">
+      <div class="eyebrow">Shop</div>
+      <h1>The Smarter Way<br>to <em style="color:var(--gold);font-style:italic;">Clean.</em></h1>
+      <p>One bottle. One cloth. A showroom finish in minutes. Free from harsh chemicals. Free from water waste.</p>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT -->
+<section style="background: var(--black);">
+  <div class="container">
+    <div class="shop-grid">
+
+      <!-- Bottle Visual -->
+      <div class="shop-bottle reveal">
+        <div class="shop-glow"></div>
+        <svg class="bottle-svg" viewBox="0 0 210 400" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:220px; position:relative; z-index:2; filter:drop-shadow(0 40px 80px rgba(0,0,0,.6)); animation: levitate 7s ease-in-out infinite;">
+          <rect x="52" y="148" width="106" height="212" rx="14" fill="#0a1e15"/>
+          <rect x="52" y="148" width="106" height="212" rx="14" stroke="#00e87a" stroke-width=".7" stroke-opacity=".8"/>
+          <path d="M52 170 Q52 148 74 148 H136 Q158 148 158 170" fill="#071410" stroke="#00e87a" stroke-width=".7" stroke-opacity=".6"/>
+          <rect x="80" y="103" width="50" height="50" rx="5" fill="#0a1e15" stroke="#00e87a" stroke-width=".7" stroke-opacity=".7"/>
+          <rect x="70" y="88" width="70" height="22" rx="11" fill="#122a1e" stroke="#00e87a" stroke-width=".7"/>
+          <path d="M140 99 L186 82" stroke="#00e87a" stroke-width="2.5" stroke-linecap="round"/>
+          <ellipse cx="188" cy="81" rx="5" ry="5" fill="#00e87a"/>
+          <circle cx="198" cy="73" r="1.8" fill="#00e87a" opacity=".7"/>
+          <circle cx="202" cy="80" r="1.2" fill="#00e87a" opacity=".5"/>
+          <circle cx="199" cy="88" r="1.4" fill="#00e87a" opacity=".4"/>
+          <circle cx="205" cy="69" r="1"   fill="#00e87a" opacity=".3"/>
+          <circle cx="207" cy="76" r=".8"  fill="#00e87a" opacity=".25"/>
+          <line x1="52" y1="202" x2="158" y2="202" stroke="#00e87a" stroke-width="1.2" stroke-opacity=".5"/>
+          <line x1="52" y1="296" x2="158" y2="296" stroke="#00e87a" stroke-width="1.2" stroke-opacity=".5"/>
+          <rect x="59" y="210" width="92" height="78" rx="3" fill="#071612" stroke="#00e87a" stroke-width=".5" stroke-opacity=".5"/>
+          <text x="105" y="237" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#00e87a" letter-spacing="3" font-weight="700">SPROOZT</text>
+          <line x1="72" y1="244" x2="138" y2="244" stroke="#00e87a" stroke-width=".5" stroke-opacity=".3"/>
+          <text x="105" y="256" text-anchor="middle" font-family="Arial,sans-serif" font-size="6.5" fill="#666" letter-spacing="2.5">WATERLESS CAR WASH</text>
+          <text x="105" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="6" fill="#555" letter-spacing="1.5">350 ML · SWEDEN</text>
+          <rect x="57" y="344" width="96" height="10" rx="5" fill="#122a1e"/>
+          <path d="M64 165 Q70 200 64 310" stroke="white" stroke-width=".5" stroke-opacity=".04"/>
+        </svg>
+      </div>
+
+      <!-- Details -->
+      <div class="shop-details reveal delay-2">
+        <div class="shop-badge">Best Seller</div>
+        <div class="eyebrow">Sproozt Premium</div>
+        <h2>Waterless Car Wash<br>Spray <em style="color:var(--gold);font-style:italic;">350ml</em></h2>
+        <p>Professional-grade waterless car wash formula. Cleans, polishes, and protects all exterior surfaces in one effortless step. Zero water required. ISO 9001 &amp; 14001 certified.</p>
+
+        <div class="shop-price">
+          <span class="amount">450</span>
+          <span class="currency">SEK</span>
+          <span class="size">· 350ml</span>
+        </div>
+
+        <div class="shop-features">
+          <div class="shop-feat">Zero water required</div>
+          <div class="shop-feat">ISO 14001 certified</div>
+          <div class="shop-feat">Safe on all surfaces</div>
+          <div class="shop-feat">No abrasives or acids</div>
+          <div class="shop-feat">Polymer protection</div>
+          <div class="shop-feat">Swedish formula</div>
+          <div class="shop-feat">Ships across Europe</div>
+          <div class="shop-feat">30-day guarantee</div>
+        </div>
+
+        <div class="shop-buy-btns">
+          <a href="#" class="btn btn-gold" style="padding: 18px 44px; font-size: 12px;">Add to Cart</a>
+          <a href="#" class="btn btn-outline">Buy with Swish</a>
+        </div>
+
+        <div class="shop-pay">
+          <div class="pay-badge">Swish</div>
+          <div class="pay-badge">PayPal</div>
+          <div class="pay-badge">Shopify Pay</div>
+          <div class="pay-badge">Visa</div>
+          <div class="pay-badge">Mastercard</div>
+        </div>
+
+        <p style="font-size:12px; color:var(--ink-light); margin-top:20px; line-height:1.6;">
+          Free standard shipping on all orders within Sweden. European shipping rates shown at checkout. Ships to all non-sanctioned European countries. 30-day satisfaction guarantee.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRUST SIGNALS -->
+<div class="trust-bar" style="margin-top:0;">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="t-item"><span class="ti">🌿</span><span>100% Eco-Friendly Formula</span></div>
+      <div class="t-item"><span class="ti">🛡️</span><span>30-Day Guarantee</span></div>
+      <div class="t-item"><span class="ti">✦</span><span>ISO 9001 &amp; 14001 Certified</span></div>
+      <div class="t-item"><span class="ti">🚚</span><span>Ships Across Europe</span></div>
+      <div class="t-item"><span class="ti">🔒</span><span>Secure Checkout</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT YOU GET -->
+<section style="padding: 100px 0; background: var(--charcoal);">
+  <div class="container">
+    <div class="section-intro reveal">
+      <div class="eyebrow">Included</div>
+      <h2>Everything You Need<br>for a Perfect Clean</h2>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(3,1fr); gap: 2px;">
+      <div class="b-card reveal">
+        <span class="b-icon">🧴</span>
+        <h3>Sproozt 350ml</h3>
+        <p>Professional-grade waterless car wash formula. 2–3 full vehicle washes per bottle, or many more spot-cleaning sessions.</p>
+      </div>
+      <div class="b-card reveal delay-2">
+        <span class="b-icon">📋</span>
+        <h3>Usage Instructions</h3>
+        <p>Clear, simple instructions included with every order. Three steps, five minutes, perfect results — every time.</p>
+      </div>
+      <div class="b-card reveal delay-4">
+        <span class="b-icon">💚</span>
+        <h3>Clean Conscience</h3>
+        <p>Every purchase supports a cleaner planet. Zero water waste, eco-certified formula, and packaging designed with sustainability in mind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECENT REVIEWS -->
+<section style="padding: 80px 0 100px; background: var(--black);">
+  <div class="container">
+    <div class="section-intro reveal">
+      <div class="eyebrow">Customer Reviews</div>
+      <h2>What Drivers<br>Are Saying</h2>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:22px;">
+      <div class="r-card reveal">
+        <div class="r-quote">"</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Washing a car without water felt impossible. But my car came out cleaner than at the local car wash. One spray, one cloth. Genuinely remarkable."</p>
+        <div class="r-author">
+          <div class="r-avatar">EL</div>
+          <div><p class="r-name">Erik Lindström</p><p class="r-location">Stockholm · Verified Buyer</p></div>
+        </div>
+      </div>
+      <div class="r-card reveal delay-2">
+        <div class="r-quote">"</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"Zero water waste, no harsh chemicals, and the result is genuinely better than a bucket wash. Exactly what I've been looking for."</p>
+        <div class="r-author">
+          <div class="r-avatar">AH</div>
+          <div><p class="r-name">Anna Holmgren</p><p class="r-location">Gothenburg · Verified Buyer</p></div>
+        </div>
+      </div>
+      <div class="r-card reveal delay-4">
+        <div class="r-quote">"</div>
+        <div class="r-stars">★★★★★</div>
+        <p class="r-text">"I was spending 300–400 SEK a month at car washes. With Sproozt, one bottle covers weeks. The quality alone would have sold me."</p>
+        <div class="r-author">
+          <div class="r-avatar">JN</div>
+          <div><p class="r-name">Jonas Nilsson</p><p class="r-location">Örebro · Verified Buyer</p></div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="reviews.html" class="btn-ghost">Read All Reviews</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+        <p>Premium waterless car care, founded in Sweden. Engineered for those who demand excellence without compromise.</p>
+      </div>
+      <div class="f-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product.html">About Sproozt</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="shop.html">Shop Now</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="reviews.html">Reviews &amp; FAQ</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Sproozt AB · Founded in Sweden · All rights reserved.</p>
+      <div class="socials">
+        <a href="#" class="soc" aria-label="Instagram">IG</a>
+        <a href="#" class="soc" aria-label="TikTok">TK</a>
+        <a href="#" class="soc" aria-label="Facebook">FB</a>
+        <a href="#" class="soc" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
