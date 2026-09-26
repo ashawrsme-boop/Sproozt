@@ -7,7 +7,7 @@
   <meta name="description" content="Sproozt is a Swedish premium waterless car wash. Clean your car in minutes with zero water. Eco-friendly, cost-efficient, professional-grade results.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,16 +25,16 @@
         <li><a href="reviews.html">Reviews</a></li>
         <li><a href="shop.html" class="nav-buy">Shop Now</a></li>
       </ul>
-      <div class="burger" id="burger" onclick="openMenu()">
+      <button class="burger" id="burger" onclick="openMenu()" aria-label="Open menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </div>
 </nav>
 
 <!-- ═══ MOBILE MENU ═══════════════════════════════════════ -->
 <div id="mob-menu">
-  <button class="mob-close" onclick="closeMenu()">✕</button>
+  <button class="mob-close" onclick="closeMenu()" aria-label="Close menu">✕</button>
   <a href="product.html"      onclick="closeMenu()">Product</a>
   <a href="benefits.html"     onclick="closeMenu()">Benefits</a>
   <a href="how-it-works.html" onclick="closeMenu()">How It Works</a>
@@ -55,31 +55,21 @@
   </div>
   <div class="hero-overlay"></div>
 
-  <div class="container" style="position:relative;z-index:2;width:100%;">
-    <div class="hero-grid">
-
-      <!-- ── Left: Copy ── -->
-      <div class="reveal">
-        <div class="eyebrow">
-          Swedish Innovation · Est. 2024
-        </div>
-        <h1 class="hero-title">
-          !!Clean Without<br>a Single Drop<br>of <em>Water.</em>
-        </h1>
-        <p class="hero-sub">
-          Sproozt is a premium waterless car wash, born in Sweden. One 350ml bottle, one microfibre cloth — a showroom-perfect finish in minutes. No hose. No bucket. No compromise.
-        </p>
-        <div class="hero-btns">
-          <a href="shop.html" class="btn btn-gold">Shop Now — 450 SEK</a>
-          <a href="how-it-works.html" class="btn-ghost">See How It Works</a>
-        </div>
-        
+  <div class="container hero-content">
+    <div class="hero-copy reveal">
+      <div class="eyebrow">
+        Swedish Innovation · Est. 2024
       </div>
-
-      
-        
+      <h1 class="hero-title">
+        Clean Without<br>a Single Drop<br>of <em>Water.</em>
+      </h1>
+      <p class="hero-sub">
+        Sproozt is a premium waterless car wash, born in Sweden. One 350ml bottle, one microfibre cloth — a showroom-perfect finish in minutes. No hose. No bucket. No compromise.
+      </p>
+      <div class="hero-btns">
+        <a href="shop.html" class="btn btn-gold">Shop Now — 450 SEK</a>
+        <a href="how-it-works.html" class="btn-ghost">See How It Works</a>
       </div>
-
     </div>
   </div>
 

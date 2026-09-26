@@ -6,7 +6,7 @@
   <title>Our Story — Sproozt Waterless Car Wash</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,15 +23,15 @@
         <li><a href="reviews.html">Reviews</a></li>
         <li><a href="shop.html" class="nav-buy">Shop Now</a></li>
       </ul>
-      <div class="burger" id="burger" onclick="openMenu()">
+      <button class="burger" id="burger" onclick="openMenu()" aria-label="Open menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </div>
 </nav>
 
 <div id="mob-menu">
-  <button class="mob-close" onclick="closeMenu()">✕</button>
+  <button class="mob-close" onclick="closeMenu()" aria-label="Close menu">✕</button>
   <a href="product.html"      onclick="closeMenu()">Product</a>
   <a href="benefits.html"     onclick="closeMenu()">Benefits</a>
   <a href="how-it-works.html" onclick="closeMenu()">How It Works</a>
@@ -45,7 +45,7 @@
   <div class="container">
     <div class="page-header-inner reveal">
       <div class="eyebrow">Our Story</div>
-      <h1>Born in Sweden.<br>Built for the <em style="color:var(--gold);font-style:italic;">World.</em></h1>
+      <h1>Born in Sweden.<br>Built for the <em>World.</em></h1>
       <p>A brand founded on one conviction: there is always a smarter, cleaner, more responsible way to do things. Sproozt is proof of that.</p>
     </div>
   </div>
@@ -57,7 +57,7 @@
     <div class="story-grid">
       <div class="story-copy reveal">
         <div class="eyebrow">The Beginning</div>
-        <h2>A Choice to Do<br>Things <em style="color:var(--gold);font-style:italic;">Better.</em></h2>
+        <h2>A Choice to Do<br>Things <em>Better.</em></h2>
         <p>Sproozt was founded on a simple conviction: there had to be a better way. Not just to wash a car — but to rethink the entire relationship between modern life and unnecessary waste.</p>
         <p>Sweden has always led the world in environmental thinking and design excellence. We built Sproozt on those same principles — crafting a product that is as intelligent as it is effective. One that respects your time, your money, and your environment in equal measure.</p>
         <p>Every bottle of Sproozt represents a choice. A choice to consume smarter, live cleaner, and hold your standards higher — without sacrificing a single drop of quality.</p>
@@ -91,14 +91,14 @@
 </section>
 
 <!-- SCANDINAVIAN VALUES -->
-<section style="padding: 100px 0; background: var(--bg-off);">
+<section class="band">
   <div class="container">
     <div class="section-intro reveal">
       <div class="eyebrow">Our Values</div>
       <h2>Scandinavian Values<br>at Our Core</h2>
       <p>Everything about Sproozt reflects the values that have defined Swedish design and innovation for generations.</p>
     </div>
-    <div style="display:grid; grid-template-columns: repeat(2,1fr); gap: 2px;">
+    <div class="card-grid cols-2">
       <div class="b-card reveal">
         <span class="b-icon">🏔️</span>
         <h3>Lagom — Just Right</h3>
@@ -126,9 +126,9 @@
 <!-- MINI CTA -->
 <section class="cta-block alt">
   <div class="container">
-    <div class="reveal" style="max-width:540px; margin:0 auto;">
-      <div class="eyebrow" style="justify-content:center;">Join the Movement</div>
-      <h2>Be Part of the<br><em style="color:var(--sage);font-style:italic;">Smarter Choice.</em></h2>
+    <div class="cta-inner reveal">
+      <div class="eyebrow">Join the Movement</div>
+      <h2>Be Part of the<br><em>Smarter Choice.</em></h2>
       <p>Drivers across Europe are making the switch. One bottle at a time, we're changing how cars get clean.</p>
       <div class="cta-btns">
         <a href="shop.html" class="btn btn-gold">Shop Now — 450 SEK</a>

@@ -6,7 +6,7 @@
   <title>Benefits — Sproozt Waterless Car Wash</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,15 +23,15 @@
         <li><a href="reviews.html">Reviews</a></li>
         <li><a href="shop.html" class="nav-buy">Shop Now</a></li>
       </ul>
-      <div class="burger" id="burger" onclick="openMenu()">
+      <button class="burger" id="burger" onclick="openMenu()" aria-label="Open menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </div>
 </nav>
 
 <div id="mob-menu">
-  <button class="mob-close" onclick="closeMenu()">✕</button>
+  <button class="mob-close" onclick="closeMenu()" aria-label="Close menu">✕</button>
   <a href="product.html"      onclick="closeMenu()">Product</a>
   <a href="benefits.html"     onclick="closeMenu()" class="active">Benefits</a>
   <a href="how-it-works.html" onclick="closeMenu()">How It Works</a>
@@ -45,7 +45,7 @@
   <div class="container">
     <div class="page-header-inner reveal">
       <div class="eyebrow">Why Sproozt</div>
-      <h1>Every Advantage.<br>In One <em style="color:var(--gold);font-style:italic;">Bottle.</em></h1>
+      <h1>Every Advantage.<br>In One <em>Bottle.</em></h1>
       <p>Sproozt was engineered for those who demand performance without compromise — for your car, your wallet, and your planet.</p>
     </div>
   </div>
@@ -96,24 +96,24 @@
 </section>
 
 <!-- STATS ROW -->
-<section style="padding: 100px 0; background: var(--black);">
+<section class="band">
   <div class="container">
-    <div style="display:grid; grid-template-columns: repeat(4,1fr); gap: 2px; text-align:center;">
-      <div class="b-card reveal" style="padding: 44px 24px;">
-        <span style="font-family:'Playfair Display',serif; font-size:52px; font-weight:700; color:var(--gold); display:block; margin-bottom:12px;">0 L</span>
-        <p style="font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--ink-light);">Water per wash</p>
+    <div class="stat-grid">
+      <div class="stat-card reveal">
+        <span class="stat-value">0 L</span>
+        <p class="stat-label">Water per wash</p>
       </div>
-      <div class="b-card reveal delay-1" style="padding: 44px 24px;">
-        <span style="font-family:'Playfair Display',serif; font-size:52px; font-weight:700; color:var(--gold); display:block; margin-bottom:12px;">150 L</span>
-        <p style="font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--ink-light);">Saved vs traditional</p>
+      <div class="stat-card reveal delay-1">
+        <span class="stat-value">150 L</span>
+        <p class="stat-label">Saved vs traditional</p>
       </div>
-      <div class="b-card reveal delay-2" style="padding: 44px 24px;">
-        <span style="font-family:'Playfair Display',serif; font-size:52px; font-weight:700; color:var(--gold); display:block; margin-bottom:12px;">&lt; 5</span>
-        <p style="font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--ink-light);">Minutes to finish</p>
+      <div class="stat-card reveal delay-2">
+        <span class="stat-value">&lt; 5</span>
+        <p class="stat-label">Minutes to finish</p>
       </div>
-      <div class="b-card reveal delay-3" style="padding: 44px 24px;">
-        <span style="font-family:'Playfair Display',serif; font-size:52px; font-weight:700; color:var(--gold); display:block; margin-bottom:12px;">0</span>
-        <p style="font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--ink-light);">Harmful chemicals</p>
+      <div class="stat-card reveal delay-3">
+        <span class="stat-value">0</span>
+        <p class="stat-label">Harmful chemicals</p>
       </div>
     </div>
   </div>
@@ -122,9 +122,9 @@
 <!-- MINI CTA -->
 <section class="cta-block">
   <div class="container">
-    <div class="reveal" style="max-width:540px; margin:0 auto;">
-      <div class="eyebrow" style="justify-content:center;">Experience the Difference</div>
-      <h2>All These Benefits.<br><em style="color:var(--sage);font-style:italic;">One Bottle.</em></h2>
+    <div class="cta-inner reveal">
+      <div class="eyebrow">Experience the Difference</div>
+      <h2>All These Benefits.<br><em>One Bottle.</em></h2>
       <p>350ml · 450 SEK · Free from harmful chemicals · Ships across Europe.</p>
       <div class="cta-btns">
         <a href="shop.html" class="btn btn-gold">Shop Now — 450 SEK</a>

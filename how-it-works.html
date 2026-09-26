@@ -6,7 +6,7 @@
   <title>How It Works — Sproozt Waterless Car Wash</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,15 +23,15 @@
         <li><a href="reviews.html">Reviews</a></li>
         <li><a href="shop.html" class="nav-buy">Shop Now</a></li>
       </ul>
-      <div class="burger" id="burger" onclick="openMenu()">
+      <button class="burger" id="burger" onclick="openMenu()" aria-label="Open menu">
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </div>
   </div>
 </nav>
 
 <div id="mob-menu">
-  <button class="mob-close" onclick="closeMenu()">✕</button>
+  <button class="mob-close" onclick="closeMenu()" aria-label="Close menu">✕</button>
   <a href="product.html"      onclick="closeMenu()">Product</a>
   <a href="benefits.html"     onclick="closeMenu()">Benefits</a>
   <a href="how-it-works.html" onclick="closeMenu()" class="active">How It Works</a>
@@ -45,7 +45,7 @@
   <div class="container">
     <div class="page-header-inner reveal">
       <div class="eyebrow">The Process</div>
-      <h1>Three Steps to a<br><em style="color:var(--gold);font-style:italic;">Perfect Finish.</em></h1>
+      <h1>Three Steps to a<br><em>Perfect Finish.</em></h1>
       <p>No equipment to set up. No water source needed. No specialist knowledge required. Just three effortless steps to a result you'd expect from a professional detailer.</p>
     </div>
   </div>
@@ -75,13 +75,13 @@
 </section>
 
 <!-- TIPS -->
-<section style="padding: 80px 0; background: var(--charcoal);">
+<section class="band">
   <div class="container">
     <div class="section-intro reveal">
       <div class="eyebrow">Pro Tips</div>
       <h2>Get the Most<br>From Every Spray</h2>
     </div>
-    <div style="display:grid; grid-template-columns: repeat(3,1fr); gap: 2px;">
+    <div class="card-grid cols-3">
       <div class="b-card reveal">
         <span class="b-icon">🧴</span>
         <h3>Work in Sections</h3>
@@ -157,9 +157,9 @@
 <!-- MINI CTA -->
 <section class="cta-block alt">
   <div class="container">
-    <div class="reveal" style="max-width:540px; margin:0 auto;">
-      <div class="eyebrow" style="justify-content:center;">Try It Now</div>
-      <h2>Spray. Wipe.<br><em style="color:var(--sage);font-style:italic;">Shine.</em></h2>
+    <div class="cta-inner reveal">
+      <div class="eyebrow">Try It Now</div>
+      <h2>Spray. Wipe.<br><em>Shine.</em></h2>
       <p>The simplest car clean you'll ever do. 350ml · 450 SEK · Delivered to your door.</p>
       <div class="cta-btns">
         <a href="shop.html" class="btn btn-gold">Shop Now — 450 SEK</a>
