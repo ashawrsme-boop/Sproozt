@@ -168,10 +168,14 @@ h1 em, h2 em, h3 em {
 .btn:active { transform: scale(.98); }
 
 .btn-gold {
+  background: var(--white);
+  color: var(--black);
+}
+.bttn-gold {
   background: var(--forest);
   color: var(--white);
 }
-.btn-gold:hover {
+.bttn-gold:hover {
   background: var(--forest-deep);
   transform: translateY(-1px);
   box-shadow: 0 10px 24px -10px rgba(44,110,73,.6);
