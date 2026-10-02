@@ -129,9 +129,10 @@
             <fieldset class="field">
               <legend>How often do you wash your car? <span class="opt">(optional)</span></legend>
               <div class="wl-options">
-                <label class="wl-option"><input type="radio" name="washFrequency" value="Every week"><span>Every week</span></label>
                 <label class="wl-option"><input type="radio" name="washFrequency" value="Every 2 weeks"><span>Every 2 weeks</span></label>
-                <label class="wl-option"><input type="radio" name="washFrequency" value="Once a month"><span>Once a month</span></label>
+                <label class="wl-option"><input type="radio" name="washFrequency" value="Every 4 weeks"><span>Every 4 weeks</span></label>
+                <label class="wl-option"><input type="radio" name="washFrequency" value="Every 6 weeks"><span>Every 6 weeks</span></label>
+                <label class="wl-option"><input type="radio" name="washFrequency" value="Every 8 weeks"><span>Every 8 weeks</span></label>
                 <label class="wl-option"><input type="radio" name="washFrequency" value="Every few months"><span>Every few months</span></label>
                 <label class="wl-option"><input type="radio" name="washFrequency" value="Rarely or never"><span>Rarely or never</span></label>
               </div>
@@ -163,14 +164,9 @@
               <div class="wl-options">
                 <label class="wl-option"><input type="radio" name="gender" value="Woman"><span>Woman</span></label>
                 <label class="wl-option"><input type="radio" name="gender" value="Man"><span>Man</span></label>
-                <label class="wl-option"><input type="radio" name="gender" value="Non-binary"><span>Non-binary</span></label>
                 <label class="wl-option"><input type="radio" name="gender" value="Prefer not to say"><span>Prefer not to say</span></label>
-                <label class="wl-option"><input type="radio" name="gender" value="Self-describe"><span>Self-describe</span></label>
               </div>
-              <div class="wl-self" id="wl-self" hidden>
-                <label for="wl-gender-self" class="visually-hidden">Describe your gender</label>
-                <input id="wl-gender-self" name="genderSelf" type="text" maxlength="60" placeholder="Describe your gender (optional)">
-              </div>
+              
             </fieldset>
 
             <button type="button" class="wl-clear" id="wl-clear" data-clear="ageRange,gender" hidden>Clear my age and gender answers</button>
