@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Waitlist — Sproozt</title>
+  <meta name="description" content="Sproozt is building a smarter way to care for your car. Join the waitlist for early access and become a founding member.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+      <ul class="nav-links nav-keep">
+        <!-- [hidden]
+        <li><a href="product.html">Product</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        [/hidden] -->
+        <li><a href="waitinglist.html" class="active">Waiting List</a></li>
+        <!-- [hidden]
+        <li><a href="shop.html" class="nav-buy">Shop Now</a></li>
+        [/hidden] -->
+      </ul>
+      <!-- [hidden]
+      <button class="burger" id="burger" onclick="openMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      [/hidden] -->
+    </div>
+  </div>
+</nav>
+
+<!-- [hidden]
+<div id="mob-menu">
+  <button class="mob-close" onclick="closeMenu()" aria-label="Close menu">✕</button>
+  <a href="product.html"      onclick="closeMenu()">Product</a>
+  <a href="benefits.html"     onclick="closeMenu()">Benefits</a>
+  <a href="how-it-works.html" onclick="closeMenu()">How It Works</a>
+  <a href="our-story.html"    onclick="closeMenu()">Our Story</a>
+  <a href="reviews.html"      onclick="closeMenu()">Reviews</a>
+  <a href="waitinglist.html"  onclick="closeMenu()" class="active">Waiting List</a>
+  <a href="shop.html"         onclick="closeMenu()">Shop Now</a>
+</div>
+[/hidden] -->
+
+<!-- ═══ 1. INTRODUCTION ═══════════════════════════════════ 
+<header class="page-header wl-intro" data-watermark="SPROOZT">
+  <div class="container">
+    <div class="page-header-inner reveal">
+      <div class="eyebrow">The New Way to Care for Your Car</div>
+      <h1>Clean Your Car.<br>Leave a Lighter <em>Footprint.</em></h1>
+      <p>Sproozt is building a smarter way to care for your car — designed for people who want a cleaner car without unnecessary time, water and waste.</p>
+      <div class="wl-intro-cta">
+        <a href="#join" class="btn btn-gold btn-lg">Join the Waitlist</a>
+        <p class="wl-intro-note">Get early access <span aria-hidden="true">•</span> Become a founding member</p>
+      </div>
+    </div>
+  </div>
+</header>
+-->
+
+
+<!-- ═══ 4–7. SIGN-UP ══════════════════════════════════════ -->
+<section id="join">
+  <div class="container">
+    <div class="wl-grid">
+
+      <div class="wl-copy reveal">
+        <h2>Join <em>Sproozt</em></h2>
+        <p>Join the waitlist and be there when the doors open.</p>
+      </div>
+
+      <div class="wl-card reveal delay-2">
+        <form id="wl-form" class="wl-form" action="/api/waitlist" method="POST" novalidate>
+
+          <!-- Required -->
+          <div class="wl-row">
+            <div class="field">
+              <label for="wl-first">First name <span class="req" aria-hidden="true">*</span></label>
+              <input id="wl-first" name="firstName" type="text" autocomplete="given-name" maxlength="60" required>
+              <p class="field-error" id="wl-first-err"></p>
+            </div>
+            <div class="field">
+              <label for="wl-last">Last name <span class="opt">(optional)</span></label>
+              <input id="wl-last" name="lastName" type="text" autocomplete="family-name" maxlength="60">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="wl-email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input id="wl-email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required>
+            <p class="field-error" id="wl-email-err"></p>
+          </div>
+
+          <div class="field">
+            <label for="wl-phone">Phone number <span class="opt">(optional)</span></label>
+            <input id="wl-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="24" placeholder="+46 70 123 45 67" aria-describedby="wl-phone-hint">
+            <p class="field-hint" id="wl-phone-hint">Include your country code, e.g. +46 for Sweden.</p>
+            <p class="field-error" id="wl-phone-err"></p>
+          </div>
+
+          <!-- Optional: about your car -->
+          <fieldset class="wl-optional">
+            <legend>About Your Car</legend>
+            <p>Optional: Tell us what you drive and how often you wash it. It helps us build Sproozt around real car-care routines.</p>
+
+            <fieldset class="field">
+              <legend>What type of car do you have? <span class="opt">(optional)</span></legend>
+              <div class="wl-cars">
+                <label class="wl-car"><input type="radio" name="carType" value="Hatchback"><span><svg class="wl-car-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><path d="M7 25 V15 L10 10.5 Q11 9 13 9 H35 Q37 9 38.5 10.5 L45 16 L54 17.5 Q58 18.2 58 21.5 V25 H52.5 A5.5 5.5 0 0 0 41.5 25 H22.5 A5.5 5.5 0 0 0 11.5 25 Z"/><circle cx="17" cy="25" r="3.6"/><circle cx="47" cy="25" r="3.6"/></svg><span class="wl-car-name">Hatchback</span></span></label>
+                <label class="wl-car"><input type="radio" name="carType" value="Sedan"><span><svg class="wl-car-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><path d="M5 25 V19.5 Q5 17.5 7.5 17.2 L15 16.2 L21.5 10.2 Q22.8 9 25 9 H37 Q39 9 40.5 10.3 L46.5 16 L54.5 17.2 Q58 17.8 58 21 V25 H52.5 A5.5 5.5 0 0 0 41.5 25 H22.5 A5.5 5.5 0 0 0 11.5 25 Z"/><circle cx="17" cy="25" r="3.6"/><circle cx="47" cy="25" r="3.6"/></svg><span class="wl-car-name">Sedan</span></span></label>
+                <label class="wl-car"><input type="radio" name="carType" value="Estate"><span><svg class="wl-car-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><path d="M5 25 V12 Q5 9 8 9 H37 Q39 9 40.5 10.3 L46.5 16 L54.5 17.2 Q58 17.8 58 21 V25 H52.5 A5.5 5.5 0 0 0 41.5 25 H22.5 A5.5 5.5 0 0 0 11.5 25 Z"/><circle cx="17" cy="25" r="3.6"/><circle cx="47" cy="25" r="3.6"/></svg><span class="wl-car-name">Estate</span></span></label>
+                <label class="wl-car"><input type="radio" name="carType" value="SUV"><span><svg class="wl-car-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><path d="M6 25 V9.5 Q6 6 9.5 6 H39 Q41.5 6 43 8 L48 14 L55.5 15.2 Q58 15.7 58 18.5 V25 H52.5 A5.5 5.5 0 0 0 41.5 25 H22.5 A5.5 5.5 0 0 0 11.5 25 Z"/><circle cx="17" cy="25" r="3.6"/><circle cx="47" cy="25" r="3.6"/></svg><span class="wl-car-name">SUV</span></span></label>
+                <label class="wl-car"><input type="radio" name="carType" value="Pickup"><span><svg class="wl-car-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><path d="M5 25 V15 H27 V9.5 Q27 7 29.5 7 H38.5 Q40.8 7 42.2 9 L46.5 14 L55.5 15.2 Q58 15.7 58 18.5 V25 H52.5 A5.5 5.5 0 0 0 41.5 25 H22.5 A5.5 5.5 0 0 0 11.5 25 Z"/><circle cx="17" cy="25" r="3.6"/><circle cx="47" cy="25" r="3.6"/></svg><span class="wl-car-name">Pickup</span></span></label>
+                <label class="wl-car"><input type="radio" name="carType" value="Van"><span><svg class="wl-car-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><path d="M5 25 V8 Q5 5 8 5 H43.5 Q46 5 47.6 7.2 L53.5 14 Q58 15 58 18.5 V25 H52.5 A5.5 5.5 0 0 0 41.5 25 H22.5 A5.5 5.5 0 0 0 11.5 25 Z"/><circle cx="17" cy="25" r="3.6"/><circle cx="47" cy="25" r="3.6"/></svg><span class="wl-car-name">Van</span></span></label>
+                <label class="wl-car"><input type="radio" name="carType" value="Coupé / Sports"><span><svg class="wl-car-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><path d="M5 25 V21 Q5 18.6 8 18.2 L18 16.6 L26 11.2 Q27.8 10 30.5 10 H35.5 Q38.5 10 40.6 11.8 L46 16.2 L55 17.6 Q58 18.2 58 21.5 V25 H52.5 A5.5 5.5 0 0 0 41.5 25 H22.5 A5.5 5.5 0 0 0 11.5 25 Z"/><circle cx="17" cy="25" r="3.6"/><circle cx="47" cy="25" r="3.6"/></svg><span class="wl-car-name">Coupé / Sports</span></span></label>
+                <label class="wl-car"><input type="radio" name="carType" value="Other"><span><svg class="wl-car-icon" viewBox="0 0 64 32" aria-hidden="true" focusable="false"><circle cx="20" cy="17" r="2.2" class="dot"/><circle cx="32" cy="17" r="2.2" class="dot"/><circle cx="44" cy="17" r="2.2" class="dot"/></svg><span class="wl-car-name">Other</span></span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="field">
+              <legend>How often do you wash your car? <span class="opt">(optional)</span></legend>
+              <div class="wl-options">
+                <label class="wl-option"><input type="radio" name="washFrequency" value="Every week"><span>Every week</span></label>
+                <label class="wl-option"><input type="radio" name="washFrequency" value="Every 2 weeks"><span>Every 2 weeks</span></label>
+                <label class="wl-option"><input type="radio" name="washFrequency" value="Once a month"><span>Once a month</span></label>
+                <label class="wl-option"><input type="radio" name="washFrequency" value="Every few months"><span>Every few months</span></label>
+                <label class="wl-option"><input type="radio" name="washFrequency" value="Rarely or never"><span>Rarely or never</span></label>
+              </div>
+            </fieldset>
+
+            <button type="button" class="wl-clear" data-clear="carType,washFrequency" hidden>Clear my car answers</button>
+          </fieldset>
+
+          <!-- Optional -->
+          <fieldset class="wl-optional">
+            <legend>Help Us Build Sproozt for the Right People</legend>
+            <p>Optional: Tell us a little about yourself. Your age and gender help us understand who is interested in Sproozt and improve the products and experiences we build.</p>
+            <p class="wl-fine">This information is optional and will only be used for aggregated market research and product development.</p>
+
+            <fieldset class="field">
+              <legend>Age <span class="opt">(optional)</span></legend>
+              <div class="wl-options">
+                <label class="wl-option"><input type="radio" name="ageRange" value="18–24"><span>18–24</span></label>
+                <label class="wl-option"><input type="radio" name="ageRange" value="25–34"><span>25–34</span></label>
+                <label class="wl-option"><input type="radio" name="ageRange" value="35–44"><span>35–44</span></label>
+                <label class="wl-option"><input type="radio" name="ageRange" value="45–54"><span>45–54</span></label>
+                <label class="wl-option"><input type="radio" name="ageRange" value="55+"><span>55+</span></label>
+                <label class="wl-option"><input type="radio" name="ageRange" value="Prefer not to say"><span>Prefer not to say</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="field">
+              <legend>Gender <span class="opt">(optional)</span></legend>
+              <div class="wl-options">
+                <label class="wl-option"><input type="radio" name="gender" value="Woman"><span>Woman</span></label>
+                <label class="wl-option"><input type="radio" name="gender" value="Man"><span>Man</span></label>
+                <label class="wl-option"><input type="radio" name="gender" value="Non-binary"><span>Non-binary</span></label>
+                <label class="wl-option"><input type="radio" name="gender" value="Prefer not to say"><span>Prefer not to say</span></label>
+                <label class="wl-option"><input type="radio" name="gender" value="Self-describe"><span>Self-describe</span></label>
+              </div>
+              <div class="wl-self" id="wl-self" hidden>
+                <label for="wl-gender-self" class="visually-hidden">Describe your gender</label>
+                <input id="wl-gender-self" name="genderSelf" type="text" maxlength="60" placeholder="Describe your gender (optional)">
+              </div>
+            </fieldset>
+
+            <button type="button" class="wl-clear" id="wl-clear" data-clear="ageRange,gender" hidden>Clear my age and gender answers</button>
+          </fieldset>
+
+          <!-- Privacy & consent -->
+          <div class="wl-privacy">
+            <p>We'll use your name, email and — if you give it — your phone number to manage your place on the Sproozt waitlist and to tell you when the doors open. Read our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+            <label class="wl-consent">
+              <input type="checkbox" name="marketing" id="wl-marketing" value="yes">
+              <span>Also send me Sproozt news and offers. Optional — not needed to join the waitlist. You can unsubscribe at any time.</span>
+            </label>
+          </div>
+
+          <!-- Spam trap: hidden from people, bots fill it in -->
+          <div class="wl-trap" aria-hidden="true">
+            <label for="wl-website">Leave this empty</label>
+            <input id="wl-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-lg wl-submit">Join the Waitlist</button>
+          <p class="wl-status" id="wl-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <!-- Success -->
+        <div class="wl-success" id="wl-success" tabindex="-1" hidden>
+          <div class="eyebrow">Access Granted</div>
+          <h2>Welcome to <em>Sproozt.</em></h2>
+          <p class="wl-success-lead">You're officially on the list.</p>
+
+          <div class="wl-member">
+            <span class="wl-member-label">Your member number</span>
+            <span class="wl-member-no" id="wl-member-no"></span>
+          </div>
+
+          <h3>You Found Us Early.</h3>
+          <p>We'll let you know when the doors open.</p>
+          <p class="wl-youre-in">You're In.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <a href="index.html" class="logo">SPROOZ<em>T</em></a>
+        <p>Premium waterless car care, founded in Sweden. Engineered for those who demand excellence without compromise.</p>
+      </div>
+      <!-- [hidden]
+      <div class="f-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product.html">About Sproozt</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="shop.html">Shop Now</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="waitinglist.html">Waiting List</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="reviews.html">Reviews &amp; FAQ</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      [/hidden] -->
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Sproozt AB · Founded in Sweden · All rights reserved. · <a href="privacy-policy.html" class="footer-legal">Privacy Policy</a></p>
+      <div class="socials">
+        <a href="#" class="soc" aria-label="Instagram">IG</a>
+        <a href="#" class="soc" aria-label="TikTok">TK</a>
+        <a href="#" class="soc" aria-label="Facebook">FB</a>
+        <a href="#" class="soc" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

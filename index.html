@@ -13,6 +13,7 @@
 <body>
 
 <!-- ═══ NAV ══════════════════════════════════════════════ -->
+<!-- [hidden]
 <nav id="nav">
   <div class="container">
     <div class="nav-inner">
@@ -23,6 +24,7 @@
         <li><a href="how-it-works.html">How It Works</a></li>
         <li><a href="our-story.html">Our Story</a></li>
         <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="waitinglist.html">Waiting List</a></li>
         <li><a href="shop.html" class="nav-buy">Shop Now</a></li>
       </ul>
       <button class="burger" id="burger" onclick="openMenu()" aria-label="Open menu">
@@ -31,8 +33,10 @@
     </div>
   </div>
 </nav>
+[/hidden] -->
 
 <!-- ═══ MOBILE MENU ═══════════════════════════════════════ -->
+<!-- [hidden]
 <div id="mob-menu">
   <button class="mob-close" onclick="closeMenu()" aria-label="Close menu">✕</button>
   <a href="product.html"      onclick="closeMenu()">Product</a>
@@ -40,15 +44,82 @@
   <a href="how-it-works.html" onclick="closeMenu()">How It Works</a>
   <a href="our-story.html"    onclick="closeMenu()">Our Story</a>
   <a href="reviews.html"      onclick="closeMenu()">Reviews</a>
+  <a href="waitinglist.html"  onclick="closeMenu()">Waiting List</a>
   <a href="shop.html"         onclick="closeMenu()">Shop Now</a>
 </div>
+[/hidden] -->
 
+<!-- ═══ INTRO VIDEO ═══════════════════════════════════════ -->
+<section id="intro-video" aria-label="Sproozt — coming soon">
+  <video class="iv-video" autoplay muted loop playsinline preload="auto">
+    <source src="Images/HeroVideo_ComingSoon.mp4" type="video/mp4">
+  </video>
+
+  <div class="iv-bar container">
+    <a href="waitinglist.html" class="btn btn-gold">Join the Waiting List</a>
+    <div class="iv-controls">
+      <!-- [hidden] <a href="#hero" class="iv-scroll">Scroll <span aria-hidden="true">↓</span></a> [/hidden] -->
+      <button type="button" class="iv-toggle" aria-label="Pause video" aria-pressed="false">
+        <svg class="iv-icon-pause" aria-hidden="true" width="14" height="14" viewBox="0 0 14 14"><rect x="2" y="1" width="3.5" height="12" rx="1" fill="currentColor"/><rect x="8.5" y="1" width="3.5" height="12" rx="1" fill="currentColor"/></svg>
+        <svg class="iv-icon-play" aria-hidden="true" width="14" height="14" viewBox="0 0 14 14"><path d="M3 1.5v11l9.5-5.5z" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- ═══ 2. YOU FOUND US EARLY ═════════════════════════════ -->
+<section id="early">
+  <div class="container">
+    <div class="section-intro reveal">
+      <h2>You Found Us <em>Early.</em></h2>
+      <p>Sproozt isn't fully launched yet. We're building the next generation of car care with the people who want to be part of it from the beginning.</p>
+    </div>
+
+    <ul class="wl-benefits">
+      <li class="b-card reveal">
+        <h3>Early Access</h3>
+        <p>Be among the first to experience Sproozt.</p>
+      </li>
+      <li class="b-card reveal delay-1">
+        <h3>Launch Updates</h3>
+        <p>Know what's happening before the public launch.</p>
+      </li>
+      <li class="b-card reveal delay-2">
+        <h3>Founding Member Opportunities</h3>
+        <p>Be part of Sproozt from the beginning.</p>
+      </li>
+      <li class="b-card reveal delay-3">
+        <h3>Exclusive Offers</h3>
+        <p>Receive offers available to early Sproozt members when applicable.</p>
+      </li>
+      <li class="b-card reveal delay-4">
+        <h3>Help Shape What's Next</h3>
+        <p>Help Sproozt understand what its early community wants.</p>
+      </li>
+    </ul>
+
+    <div class="wl-early-cta reveal">
+      <a href="#join" class="btn btn-gold btn-lg">Become a Founding Member</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 3. MISSION ════════════════════════════════════════ -->
+<section class="wl-mission">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div class="eyebrow">Our Direction</div>
+      <h2>Clean Your Car.<br>Help Build a Cleaner <em>Future.</em></h2>
+      <p>Every Sproozt member helps us move toward a cleaner way to care for the cars we drive every day.</p>
+    </div>
+  </div>
+</section>
 <!-- ═══ HERO ══════════════════════════════════════════════
      Place your editorial forest/bottle image at:
      assets/hero-forest.jpg
      Ideal: black spray bottle on mossy rock, lush forest BG.
      Recommended size: 2400×1600px or wider.
 ════════════════════════════════════════════════════════ -->
+<!-- [hidden]
 <section id="hero">
   <div class="hero-bg">
     <img src="Images/Hero-image.png" alt="Sproozt waterless car wash — bottle on rock in forest" class="hero-bg-img">
@@ -72,15 +143,19 @@
       </div>
     </div>
   </div>
+[/hidden] -->
 
   <!-- Scroll indicator -->
-  <div class="scroll-hint">
+  <!-- [hidden]
+<div class="scroll-hint">
     <div class="scroll-mouse"></div>
     <span>Scroll</span>
   </div>
 </section>
+[/hidden] -->
 
 <!-- ═══ TRUST BAR ══════════════════════════════════════════ -->
+<!-- [hidden]
 <div class="trust-bar">
   <div class="container">
     <div class="trust-inner">
@@ -92,14 +167,18 @@
     </div>
   </div>
 </div>
+[/hidden] -->
 
 <!-- ═══ ABOUT THE FORMULA ════════════════════════════════ -->
+<!-- [hidden]
 <section id="about">
   <div class="container">
     <div class="about-grid">
+[/hidden] -->
 
       <!-- Left: ingredient cards -->
-      <div class="about-cards-col">
+      <!-- [hidden]
+<div class="about-cards-col">
         <div class="about-card">
           <span class="about-card-icon">🧪</span>
           <h3>Bio-Active Surfactants</h3>
@@ -113,9 +192,11 @@
           <div class="about-card-bg"></div>
         </div>
       </div>
+[/hidden] -->
 
       <!-- Right: copy -->
-      <div class="about-copy">
+      <!-- [hidden]
+<div class="about-copy">
         <div class="eyebrow">The Formula</div>
         <h2>Three Years of<br>R&D. One Flawless<br><em>Formula.</em></h2>
         <p>Every ingredient was chosen with obsessive precision. Tested across Scandinavian winters and scorching summers. Our formula is the result of relentless refinement — science and nature, working as one.</p>
@@ -140,8 +221,10 @@
 </section>
 
 <div class="section-sep"></div>
+[/hidden] -->
 
 <!-- ═══ BENEFITS ══════════════════════════════════════════ -->
+<!-- [hidden]
 <section id="benefits">
   <div class="container">
     <div class="section-intro">
@@ -191,8 +274,10 @@
 </section>
 
 <div class="section-sep"></div>
+[/hidden] -->
 
 <!-- ═══ HOW IT WORKS ════════════════════════════════════════ -->
+<!-- [hidden]
 <section id="how">
   <div class="container">
     <div class="section-intro">
@@ -221,8 +306,10 @@
 </section>
 
 <div class="section-sep"></div>
+[/hidden] -->
 
 <!-- ═══ COMPARE ════════════════════════════════════════════ -->
+<!-- [hidden]
 <section id="compare">
   <div class="container">
     <div class="section-intro">
@@ -276,8 +363,10 @@
 </section>
 
 <div class="section-sep"></div>
+[/hidden] -->
 
 <!-- ═══ REVIEWS ════════════════════════════════════════════ -->
+<!-- [hidden]
 <section id="reviews">
   <div class="container">
     <div class="section-intro">
@@ -331,8 +420,10 @@
 </section>
 
 <div class="section-sep"></div>
+[/hidden] -->
 
 <!-- ═══ CTA ════════════════════════════════════════════════ -->
+<!-- [hidden]
 <section id="buy">
   <div class="container">
     <div class="buy-inner">
@@ -357,8 +448,10 @@
     </div>
   </div>
 </section>
+[/hidden] -->
 
 <!-- ═══ FOOTER ══════════════════════════════════════════════ -->
+<!-- [hidden]
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -379,6 +472,7 @@
         <h4>Company</h4>
         <ul>
           <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="waitinglist.html">Waiting List</a></li>
           <li><a href="#">Sustainability</a></li>
           <li><a href="#">Press</a></li>
           <li><a href="#">Contact</a></li>
@@ -405,6 +499,7 @@
     </div>
   </div>
 </footer>
+[/hidden] -->
 
 <script src="main.js"></script>
 </body>
