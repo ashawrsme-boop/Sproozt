@@ -1668,3 +1668,24 @@ footer .logo em { color: var(--leaf); }
   .legal-facts { grid-template-columns: 1fr; gap: 2px; }
   .legal-facts dd { margin-bottom: 10px; }
 }
+
+/* ─── PRODUCT INFO (home) ────────────────────────────── */
+#product { padding: var(--sec) 0; background: var(--paper); }
+#product .about-grid { align-items: stretch; }
+#product .shop-visual { aspect-ratio: auto; min-height: 420px; }
+.pi-facts { margin-top: 0; align-content: center; }
+.pi-steps { margin-top: 64px; }
+#product .step { background: var(--mist); border-color: transparent; }
+
+@media (max-width: 960px) {
+  #product .shop-visual { min-height: 0; aspect-ratio: 4 / 3; }
+  .pi-steps { margin-top: 40px; }
+}
+
+/* Intro video button: white, off-white on hover */
+#intro-video .btn-gold { color: var(--ink); }
+#intro-video .btn-gold:hover {
+  background: var(--mist);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px -12px rgba(0,0,0,.45);
+}
